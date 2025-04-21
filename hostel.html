@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hostel Information - VIT University</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFipBbdZQCLpI3lTZD-OUTNPJnrlFl0wPZqshixfxOkGl7SbvhXnsSyj_RUB6mqEbQhN8&usqp=CAU" alt="University Logo">
+        <span>VIT UNIVERSITY</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/admissions.html">Admissions</a></li>
+          <li><a href="/academics.html">Academics</a></li>
+          <li><a href="/campus-life.html" class="active">Campus Life</a></li>
+          <li><a href="/events">Events</a></li>
+        </ul>
+      </nav>
+      <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Student Housing</h1>
+      <p>Comfortable living spaces for our students</p>
+    </div>
+  </section>
+
+  <section class="hostel-facilities">
+    <div class="container">
+      <h2>Hostel Room Fees</h2>
+      
+      <!-- Room Fee Table -->
+      <table class="table">
+        <tr>
+          <th>Room Type</th>
+          <th>Room Fee (per semester)</th>
+        </tr>
+        <tr>
+          <td>2 Bed</td>
+          <td>₹30,000</td>
+        </tr>
+        <tr>
+          <td>3 Bed</td>
+          <td>₹25,000</td>
+        </tr>
+        <tr>
+          <td>4 Bed</td>
+          <td>₹20,000</td>
+        </tr>
+        <tr>
+          <td>6 Bed</td>
+          <td>₹18,000</td>
+        </tr>
+      </table>
+
+      <h2 class="mt-4">Mess Fees</h2>
+      
+      <!-- Mess Fee Table -->
+      <table class="table">
+        <tr>
+          <th>Mess Type</th>
+          <th>Mess Fee (per semester)</th>
+        </tr>
+        <tr>
+          <td>Veg Mess</td>
+          <td>₹15,000</td>
+        </tr>
+        <tr>
+          <td>Non-Veg Mess</td>
+          <td>₹18,000</td>
+        </tr>
+        <tr>
+          <td>Special Mess</td>
+          <td>₹22,000</td>
+        </tr>
+      </table>
+
+      <!-- Selection Form -->
+      <div class="form-section">
+        <h2>Choose Your Hostel Preference</h2>
+
+        <form id="hostel-form">
+          <label for="room-type" class="label">Select Room Type:</label>
+          <select id="room-type" class="select" required>
+            <option value="" disabled selected>Choose an option</option>
+            <option value="2">2 Bed</option>
+            <option value="3">3 Bed</option>
+            <option value="4">4 Bed</option>
+            <option value="6">6 Bed</option>
+          </select>
+
+          <label for="mess-type" class="label">Select Mess Type:</label>
+          <select id="mess-type" class="select" required>
+            <option value="" disabled selected>Choose a mess type</option>
+            <option value="veg">Veg Mess</option>
+            <option value="nonveg">Non-Veg Mess</option>
+            <option value="special">Special Mess</option>
+          </select>
+
+          <div class="fees-output" id="fees-output">
+            <!-- Fees will appear here -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="hostel-amenities">
+    <div class="container">
+      <h2>Hostel Amenities</h2>
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <h3>High-Speed Wi-Fi</h3>
+          <p>24/7 internet access for academic and personal use</p>
+        </div>
+        <div class="facility-card">
+          <h3>Laundry Services</h3>
+          <p>On-campus laundry facilities for student convenience</p>
+        </div>
+        <div class="facility-card">
+          <h3>24/7 Security</h3>
+          <p>Round-the-clock security for student safety</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>VIT University</h3>
+          <p>Empowering futures through education, research, and innovation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/admissions.html">Admissions</a></li>
+            <li><a href="/academics.html">Academics</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="/campus-life.html">Campus Life</a></li>
+            <li><a href="#">Alumni</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <address>
+            <p>VIT UNIVERSITY<br>Kelambakkam, Chennai</p>
+            <p>+91 8124309813</p>
+            <p>vituniversity@gmail.com</p>
+          </address>
+        </div>
+        <div class="footer-eventsletter">
+          <h3>Eventsletter</h3>
+          <p>Subscribe to our eventsletter for the latest updates.</p>
+          <form class="eventsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="ri-arrow-right-line"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 VIT University. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const roomFees = {
+      "2": 30000,
+      "3": 25000,
+      "4": 20000,
+      "6": 18000
+    };
+
+    const messFees = {
+      "veg": 15000,
+      "nonveg": 18000,
+      "special": 22000
+    };
+
+    const form = document.getElementById('hostel-form');
+    const output = document.getElementById('fees-output');
+
+    form.addEventListener('change', () => {
+      const roomType = document.getElementById('room-type').value;
+      const messType = document.getElementById('mess-type').value;
+
+      if (roomType && messType) {
+        const total = roomFees[roomType] + messFees[messType];
+        output.innerHTML = `Total Hostel Fee: <span style="color: green;">₹${total}</span> (Room: ₹${roomFees[roomType]}, Mess: ₹${messFees[messType]})`;
+      } else {
+        output.innerHTML = "";
+      }
+    });
+  </script>
+</body>
+</html>

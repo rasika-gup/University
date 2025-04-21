@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - VIT University</title>
+  <meta name="description" content="Discover and register for upcoming events at VIT University." />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFipBbdZQCLpI3lTZD-OUTNPJnrlFl0wPZqshixfxOkGl7SbvhXnsSyj_RUB6mqEbQhN8&usqp=CAU" alt="University Logo">
+        <span>VIT UNIVERSITY</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/admissions.html">Admissions</a></li>
+          <li><a href="/academics.html">Academics</a></li>
+          <li><a href="/campus-life.html">Campus Life</a></li>
+          <li><a href="/events.html" class="active">Events</a></li>
+        </ul>
+      </nav>
+      <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Campus Events</h1>
+      <p>Join us for exciting events and activities</p>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <div class="container">
+      
+<br>
+      <div class="grid">
+        <div class="event-card" data-category="cultural">
+          
+          <div class="event-content">
+            <h3>Annual Cultural Festival</h3>
+            <p>A week-long celebration of arts, music, and cultural diversity</p>
+            
+          </div>
+        </div>
+
+        <div class="event-card" data-category="sports">
+         
+          <div class="event-content">
+            <h3>Sports Day</h3>
+            <p>Inter-department sports competitions and activities</p>
+            
+          </div>
+        </div>
+
+        <div class="event-card" data-category="academic">
+         
+          <div class="event-content">
+            <h3>Career Fair</h3>
+            <p>Connect with leading companies and explore career opportunities</p>
+            
+          </div>
+        </div>
+
+        <div class="event-card" data-category="cultural">
+          <div class="event-content">
+            <h3>Vibrance</h3>
+            <p>Annual cultural festival featuring music, dance, drama, and art competitions.</p>
+           
+          </div>
+        </div>
+
+        <div class="event-card" data-category="technical">
+          <div class="event-content">
+            <h3>TechnoVIT</h3>
+            
+            <p>Annual technical symposium showcasing innovation and technology.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Registration Modal -->
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>VIT University</h3>
+          <p>Empowering futures through education, research, and innovation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/admissions.html">Admissions</a></li>
+            <li><a href="/academics.html">Academics</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="/campus-life.html">Campus Life</a></li>
+            <li><a href="#">Alumni</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <address>
+            <p>VIT UNIVERSITY<br>Kelambakkam, Chennai</p>
+            <p>+91 8124309813</p>
+            <p>vituniversity@gmail.com</p>
+          </address>
+        </div>
+        <div class="footer-eventsletter">
+          <h3>Eventsletter</h3>
+          <p>Subscribe to our eventsletter for the latest updates.</p>
+          <form class="eventsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="ri-arrow-right-line"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 University. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-btn">
+    <i class="ri-message-3-line"></i>
+  </div>
+
+  <script>
+    // Get all register buttons
+    const registerBtns = document.getElementsByClassName('register-btn');
+
+    // Add click event listener to each register button
+    Array.from(registerBtns).forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Redirect to register.html
+        window.location.href = 'register.html';
+      });
+    });
+
+    // Event filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const eventCards = document.querySelectorAll('.event-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        eventCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

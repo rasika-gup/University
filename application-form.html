@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Application Form - VIT University</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFipBbdZQCLpI3lTZD-OUTNPJnrlFl0wPZqshixfxOkGl7SbvhXnsSyj_RUB6mqEbQhN8&usqp=CAU" alt="University Logo">
+        <span>VIT UNIVERSITY</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/admissions.html">Admissions</a></li>
+          <li><a href="/academics.html">Academics</a></li>
+          <li><a href="/campus-life">Campus Life</a></li>
+          <li><a href="/events">Events</a></li>
+        </ul>
+      </nav>
+      <a href="application-form.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </header>
+
+  <section>
+    <div style="text-align: center;">
+      <h2>Application Form</h2>
+      <p>Complete your application to join VIT University</p>
+    </div>
+  </section>
+
+  <section class="application-form-section">
+    <div class="container">
+      <div class="form-container">
+        <form id="applicationForm">
+          <div class="form-section">
+            <h2>Personal Information</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dob">Date of Birth*</label>
+                <input type="date" id="dob" name="dob" required>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender*</label>
+                <select id="gender" name="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                  <option value="prefer-not">Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Address*</label>
+              <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City*</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-group">
+                <label for="state">State*</label>
+                <input type="text" id="state" name="state" required>
+              </div>
+              <div class="form-group">
+                <label for="pincode">PIN Code*</label>
+                <input type="text" id="pincode" name="pincode" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h2>Academic Information</h2>
+            <div class="form-group">
+              <label for="program">Program Applied For*</label>
+              <select id="program" name="program" required>
+                <option value="">Select Program</option>
+                <option value="btech-cse">B.Tech Computer Science</option>
+                <option value="btech-ece">B.Tech Electronics</option>
+                <option value="btech-mech">B.Tech Mechanical</option>
+                <option value="btech-civil">B.Tech Civil</option>
+                <option value="btech-eee">B.Tech Electrical</option>
+                <option value="mtech-cse">M.Tech Computer Science</option>
+                <option value="mtech-ece">M.Tech Electronics</option>
+                <option value="mba">MBA</option>
+                <option value="msc">M.Sc</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="previousQualification">Previous Qualification*</label>
+              <select id="previousQualification" name="previousQualification" required>
+                <option value="">Select Qualification</option>
+                <option value="12th">12th Standard</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelors">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="board">Board/University*</label>
+                <input type="text" id="board" name="board" required>
+              </div>
+              <div class="form-group">
+                <label for="yearOfPassing">Year of Passing*</label>
+                <input type="number" id="yearOfPassing" name="yearOfPassing" min="1990" max="2025" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="percentage">Percentage/CGPA*</label>
+                <input type="text" id="percentage" name="percentage" required>
+              </div>
+              <div class="form-group">
+                <label for="rank">Entrance Exam Rank (if applicable)</label>
+                <input type="text" id="rank" name="rank">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h2>Additional Information</h2>
+            <div class="form-group">
+              <label for="achievements">Academic Achievements</label>
+              <textarea id="achievements" name="achievements" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="extracurricular">Extracurricular Activities</label>
+              <textarea id="extracurricular" name="extracurricular" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="statement">Statement of Purpose</label>
+              <textarea id="statement" name="statement" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h2>Document Upload</h2>
+            <div class="form-group">
+              <label for="photo">Passport Size Photo*</label>
+              <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+              <label for="marksheet">Marksheet*</label>
+              <input type="file" id="marksheet" name="marksheet" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+            <div class="form-group">
+              <label for="certificate">Certificate*</label>
+              <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+            <div class="form-group">
+              <label for="idProof">ID Proof*</label>
+              <input type="file" id="idProof" name="idProof" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I declare that all the information provided is correct and complete*</label>
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">I agree to the privacy policy and terms of use*</label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+            <button type="reset" class="btn btn-outline">Reset Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>VIT University</h3>
+          <p>Empowering futures through education, research, and innovation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/admissions.html">Admissions</a></li>
+            <li><a href="/academics.html">Academics</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="/campus-life.html">Campus Life</a></li>
+            <li><a href="#">Alumni</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <address>
+            <p>VIT UNIVERSITY<br>Kelambakkam, Chennai</p>
+            <p>+91 8124309813</p>
+            <p>vituniversity@gmail.com</p>
+          </address>
+        </div>
+        <div class="footer-eventsletter">
+          <h3>Eventsletter</h3>
+          <p>Subscribe to our eventsletter for the latest updates.</p>
+          <form class="eventsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="ri-arrow-right-line"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 VIT University. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('applicationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Your application has been submitted successfully! We will contact you soon.');
+      // In a real application, you would send the form data to a server here
+    });
+  </script>
+</body>
+</html> 
