@@ -8,12 +8,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        admissions: resolve(__dirname, 'admissions.html'),
-        about: resolve(__dirname, 'about.html'),
-        contact: resolve(__dirname, 'contact.html'),
-        programs: resolve(__dirname, 'programs.html'),
-        research: resolve(__dirname, 'research.html'),
-        studentlife: resolve(__dirname, 'studentlife.html')
+        admissions: resolve(__dirname, 'public/admissions.html'),
+        about: resolve(__dirname, 'public/about.html'),
+        contact: resolve(__dirname, 'public/contact.html'),
+        programs: resolve(__dirname, 'public/programs.html'),
+        research: resolve(__dirname, 'public/research.html'),
+        studentlife: resolve(__dirname, 'public/studentlife.html')
       }
     }
   },
